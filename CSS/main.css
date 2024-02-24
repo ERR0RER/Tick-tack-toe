@@ -1,0 +1,159 @@
+html,
+body {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+body {
+	user-select: none;
+	background-color: darkgrey;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.game-main {
+	height: 700px;
+	width: 460px;
+
+}
+
+.game-reset:hover {
+	transition: all ease 0.5s;
+	background-color: rgb(150, 149, 149);
+}
+
+.game-reset {
+	transition: all ease 0.5s;
+	background-color: darkgrey;
+	font-family: "Kode Mono", monospace;
+	font-size: 15px;
+	font-weight: 700;
+	height: 50px;
+	width: 160px;
+	gap: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	margin-top: 20px;
+	padding: 10px 30px;
+	border: 2px solid black;
+	border-radius: 20px;
+	left: 150px;
+}
+
+@font-face {
+	src: url('Fonts/KodeMono-VariableFont_wght.woff2') format('woff2');
+	font-family: "Kode Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icon2 {
+	opacity: 0;
+}
+
+.ionicon {
+	height: 30px;
+	width: 30px;
+	position: relative;
+}
+
+.container {
+	width: 460px;
+	height: 605px;
+	border: 3px solid black;
+	border-radius: 30px 30px 0 0;
+}
+
+.turn {
+	color: aliceblue;
+	font-family: "Kode Mono", monospace;
+	font-size: 30px;
+	font-weight: 800;
+	height: 70px;
+	width: 460px;
+	border-bottom: 2px solid black;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.turn-name {
+	height: 70px;
+	width: 70px;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+.icon {
+	position: absolute;
+	height: 50px;
+	width: 50px;
+}
+
+.name {
+	font-size: 30px;
+	font-weight: 800;
+	color: aliceblue;
+	font-family: "Kode Mono", monospace;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	height: 70px;
+	width: 460px;
+	border-bottom: 2px solid black;
+}
+
+.container-game {
+	left: 1px;
+	position: relative;
+	gap: 1px;
+	width: 460px;
+	height: 460px;
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	border: none;
+
+}
+
+.game {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all ease 0.5s;
+	border: 1px solid black;
+	height: calc(33.33% - 1px);
+	width: calc(33.33% - 1px);
+	font-size: inherit;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: transparent;
+}
+
+.text-win span {
+	position: absolute;
+	letter-spacing: 3px;
+	font-size: 30px;
+	font-weight: 800;
+	color: limegreen;
+	opacity: 0;
+	font-family: "Kode Mono", monospace;
+}
+
+
+.text-win {
+	width: 460px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

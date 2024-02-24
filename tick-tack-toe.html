@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Fonts/KodeMono-VariableFont_wght.woff2">
+	<link rel="stylesheet" href="CSS/main.css">
+	<title>CrossCircle </title>
+</head>
+
+<body>
+	<div class="game-main">
+		<div class="container">
+			<div class="name">
+				<span>Tic Tac Toe Game</span>
+			</div>
+			<div class="turn">
+				<span>
+					Turn:
+				</span>
+				<div class="turn-name">
+					<svg xmlns="http://www.w3.org/2000/svg" id="icon1" class="icon cross" viewBox="0 0 512 512">
+						<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+							d="M368 368L144 144M368 144L144 368" />
+					</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" id="icon2" class="icon circle" viewBox="0 0 512 512">
+						<circle cx="256" cy="256" r="192" fill="none" stroke="currentColor" stroke-linecap="round"
+							stroke-linejoin="round" stroke-width="32" />
+					</svg>
+				</div>
+			</div>
+			<div class="container-game">
+				<button id="cell1" class="btn game" onclick="CrossCircle(this); database('1')"></button>
+				<button id="cell2" class="btn game" onclick="CrossCircle(this); database('2')"></button>
+				<button id="cell3" class="btn game" onclick="CrossCircle(this); database('3')"></button>
+				<button id="cell4" class="btn game" onclick="CrossCircle(this); database('4')"></button>
+				<button id="cell5" class="btn game" onclick="CrossCircle(this); database('5')"></button>
+				<button id="cell6" class="btn game" onclick="CrossCircle(this); database('6')"></button>
+				<button id="cell7" class="btn game" onclick="CrossCircle(this); database('7')"></button>
+				<button id="cell8" class="btn game" onclick="CrossCircle(this); database('8')"></button>
+				<button id="cell9" class="btn game" onclick="CrossCircle(this); database('9')"></button>
+			</div>
+		</div>
+
+		<div class="text-win">
+			<span id="wincross">Cross WIN</span>
+			<span id="wincircle">Circle WIN</span>
+		</div>
+		<button class="game-reset" onclick="reload(this)">
+			<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+				<path d="M320 146s24.36-12-64-12a160 160 0 10160 160" fill="none" stroke="currentColor" stroke-linecap="round"
+					stroke-miterlimit="10" stroke-width="32" />
+				<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+					d="M256 58l80 80-80 80" />
+			</svg>
+			<span>Restart</span>
+		</button>
+	</div>
+
+	<script src="JS/main.js"></script>
+</body>
+
+</html>
